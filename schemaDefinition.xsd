@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified"
+	attributeFormDefault="unqualified"
+	xmlns:toString="http://jaxb2-commons.dev.java.net/basic/toString">
+	<!-- XML Schema Generated from XML Document on Sun Nov 03 2019 15:40:09 
+		GMT+0100 (Mitteleuropäische Normalzeit) -->
+	<!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+	<xs:element name="shoppingList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="products">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="product" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string" />
+										<xs:element name="amount" type="xs:double" />
+										<xs:element name="expiryDate" type="xs:date" />
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:int" />
+									<xs:attribute name="unitId" type="xs:int" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="units">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="unit" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string" />
+										<xs:element name="symbol" type="xs:string" />
+										<xs:element name="deletable" type="xs:boolean" />
+									</xs:sequence>
+									<xs:attribute name="id" type="xs:int" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
