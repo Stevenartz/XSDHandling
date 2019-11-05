@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<shoppinglist>
+    <products>
+        <product id="1" unitId="1">
+            <name>Name</name>
+            <amount>100.0</amount>
+            <expiryDate>2019-11-03+01:00</expiryDate>
+        </product>
+    </products>
+    <units>
+        <unit id="1">
+            <name>Kilogramm</name>
+            <symbol>Kg</symbol>
+            <deletable>false</deletable>
+        </unit>
+        <unit id="2">
+            <name>Liter</name>
+            <symbol>L</symbol>
+            <deletable>false</deletable>
+        </unit>
+    </units>
+</shoppinglist>

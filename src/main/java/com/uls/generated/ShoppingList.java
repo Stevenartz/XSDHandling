@@ -258,7 +258,8 @@ public class ShoppingList {
             @XmlElement(required = true)
             @XmlSchemaType(name = "date")
             protected XMLGregorianCalendar expiryDate;
-            @XmlAttribute(name = "id")
+
+			@XmlAttribute(name = "id")
             protected Integer id;
             @XmlAttribute(name = "unitId", required = true)
             protected int unitId;
@@ -366,6 +367,12 @@ public class ShoppingList {
             public void setUnitId(int value) {
                 this.unitId = value;
             }
+            
+            @Override
+			public String toString() {
+				return "Product [name=" + name + ", amount=" + amount + ", expiryDate=" + expiryDate + ", id=" + id
+						+ ", unitId=" + unitId + "]";
+			}
 
         }
 
@@ -568,6 +575,11 @@ public class ShoppingList {
             public void setId(Integer value) {
                 this.id = value;
             }
+
+			@Override
+			public String toString() {
+				return "Unit [name=" + name + ", symbol=" + symbol + ", deletable=" + deletable + ", id=" + id + "]";
+			}
 
         }
 
